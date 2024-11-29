@@ -1,9 +1,23 @@
 {
   "id": "/",
-  "short_name": "IWA KS",
-  "name": "Kitchen Sink IWA",
-  "version": "0.0.0",
+  "short_name": "IWA KS v5",
+  "name": "Kitchen Sink IWA v5",
+  "version": "0.0.5",
   "update_manifest_url": "https://github.com/chromeos/iwa-sink/releases/latest/download/update.json",
+  "protocol_handlers": [
+    {
+      "protocol": "web+mypwa",
+      "url": "/?protocol=%s"
+    },
+    {
+      "protocol": "mailto",
+      "url": "/?protocol=%s"
+    },
+    {
+      "protocol": "bitcoin",
+      "url": "/?protocol=%s"
+    }
+  ],
   "icons": [
     {
       "src": "/images/icon.png",
